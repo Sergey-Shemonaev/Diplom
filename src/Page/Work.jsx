@@ -78,7 +78,7 @@ const Work = () => {
       <SectionWrk >
         {myWorks.map((x) => (
           <CardStyle key={x.id}>
-            <ImageStyle src={x.url} />
+            <ImageStyle src={x.url} alt=''/>
             <p style={{ textAlign: 'center' }}>{x.title}</p>
             <p style={{ textAlign: 'center' }}>Цена - {x.price}</p>
             <ButtonStyle

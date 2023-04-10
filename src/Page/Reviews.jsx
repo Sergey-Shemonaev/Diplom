@@ -1,16 +1,14 @@
 import styled from "styled-components";
-import { reviewsArr } from "../Components/imgList"
-
+import { reviewsArr } from "../Components/imgList";
 
 const H2Style = styled.h2`
   text-align: center;
-  font-family: 'Pacifico', cursive;
+  font-family: "Pacifico", cursive;
   margin: 1em auto;
-
 `;
 
 const ReviewsStyle = styled.div`
-   display: flex;
+  display: flex;
   align-items: center;
   flex-wrap: wrap;
   width: calc(80% - 10px);
@@ -47,14 +45,13 @@ const ImgBorderStyle = styled.div`
 `;
 
 const TextStyle = styled.p`
-  font-family: 'Pacifico', cursive;
-  font-size: 2em;
+  font-family: "Pacifico", cursive;
+  /* font-size: 1.5em; */
   /* width: 30%; */
   //@media (max-width: 991px) {
   //  width: calc(70% - 10px);
   //}
 `;
-
 
 function Reviews() {
   return (
@@ -64,12 +61,11 @@ function Reviews() {
         {reviewsArr.map((x) => (
           <TestStyle key={x.id}>
             <ImgBorderStyle>
-              <img src={x.image} />
+              <img src={x.image} alt="" />
             </ImgBorderStyle>
             <TextStyle>{x.text}</TextStyle>
           </TestStyle>
-        )
-        )}
+        ))}
       </ReviewsStyle>
     </>
   );

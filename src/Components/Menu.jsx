@@ -37,7 +37,7 @@ const Menu = () => {
                     <NavStyle >
                         <NavLinkStyled href="#my_work">Мои работы</NavLinkStyled>
                         <NavLinkStyled href="#reviews">Отзывы</NavLinkStyled>
-                        <NavLinkStyled href="#link">Контакты</NavLinkStyled>
+                        <NavLinkStyled href="#feedback">Контакты</NavLinkStyled>
                     </NavStyle>
                 </Navbar.Collapse>
             </Navbar>

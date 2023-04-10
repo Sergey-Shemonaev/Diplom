@@ -5,18 +5,19 @@ import {Formik} from "formik";
 
 const DivStyle = styled.div`
 
-  width: 20%;
+  width: 50%;
+  
   @media (min-width: 320px) and (max-width: 425px) {
     padding: 2em;
     opacity: .5;
-    width: 80%;
+    width: 100%;
     margin: 2em auto ;
   }
 
   @media (min-width: 426px) and (max-width: 768px) {
     padding: 2em;
     opacity: .5;
-    width: 65%;
+    width: 100%;
     margin: 2em auto ;
   }
 `;
@@ -59,7 +60,6 @@ function Forma() {
                       handleBlur,
                       handleSubmit,
                       isSubmitting,
-                      /* and other goodies */
                   }) => (
                     <FormikStyle onSubmit={handleSubmit}>
                         <input type="text"
