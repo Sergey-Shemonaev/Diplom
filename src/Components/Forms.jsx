@@ -4,6 +4,12 @@ import { Formik } from "formik";
 
 const DivStyle = styled.div`
   width: 50%;
+  text-align: center;
+  font-family: Pacifico, cursive;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
 
   @media (min-width: 320px) and (max-width: 425px) {
     /* padding: 2em; */
@@ -20,17 +26,19 @@ const DivStyle = styled.div`
   }
 `;
 
+const H5Style = styled.h5`
+  padding: 10px;
+`;
+
 const FormikStyle = styled.form`
   display: flex;
   flex-direction: column;
   width: 100%;
   gap: 10px;
-  text-align: center;
-  font-family: Pacifico, cursive;
 `;
 
 const LabelStule = styled.label`
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #00000060;
   margin: 1em 0;
   text-align: center;
 `;
@@ -42,9 +50,15 @@ const InputStule = styled.input`
   text-align: center;
 `;
 
+const ButtonStyle = styled.button`
+  border: 1px solid #bbbbbb;
+  padding: 10px;
+`;
+
 function Forma() {
   return (
     <DivStyle>
+      <H5Style>Есть вопросы? Нужна консультация?</H5Style>
       <Formik
         initialValues={{ email: "", tel: "" }}
         validate={(values) => {
@@ -75,19 +89,28 @@ function Forma() {
           isSubmitting,
         }) => (
           <FormikStyle onSubmit={handleSubmit}>
-            <h5 >Есть вопросы? Нужна консультация?</h5>
             <LabelStule>
               <h5>Введите Имя</h5>
               <InputStule type="text" placeholder="Введите Имя" />
             </LabelStule>
             <LabelStule>
               <h5>Введите Email</h5>
-              <InputStule type="email" placeholder="Введите Email" />
+              <InputStule
+                type="email"
+                name="email"
+                onChange={handleChange}
+                onBlur={handleBlur}
+                value={values.email}
+                // placeholder="Введите Email"
+              />
             </LabelStule>
             <LabelStule>
               <h5>Введите номер телефона</h5>
               <InputStule type="tel" placeholder="+7 xxx-xxx-xx" />
             </LabelStule>
+            <ButtonStyle type="submit" disabled={isSubmitting}>
+              Оставить заявку
+            </ButtonStyle>
           </FormikStyle>
         )}
       </Formik>
