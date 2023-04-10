@@ -39,7 +39,7 @@ const SectionWrk = styled.div`
 const ButtonStyle = styled.button`
   border: 1px solid black;
   margin: 1em 15px;
-  background: #e5e5e5;
+  background: #e4e3de;
   border: none;
   padding: 7px;
   cursor: pointer;
@@ -55,7 +55,8 @@ const CardStyle = styled.div`
   border: 1px solid #b4b4b4;
 
   &:hover {
-    background: #d0d0d0;
+    /* background: #ebebeb; */
+    box-shadow:0 0  10px 2px   #bebdbd;
   }
 `;
 

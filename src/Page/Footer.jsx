@@ -53,12 +53,12 @@ function Footer() {
       <BottomStyled>
         <p>TrailBear</p>
         <p style={{ transform: "scale(1.2)" }}>
-          <a href="https://vk.com/misha0382" rel="noreferrer">
+          <a href="https://vk.com/misha0382" target="_blank" rel="noopener noreferrer">
             <img src={Vk} alt="Vk" />
           </a>
         </p>
         <p>
-          <span>
+          <span >
             <img src={Telegram} alt="Telegram" />
           </span>
         </p>

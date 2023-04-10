@@ -1,14 +1,13 @@
 import Menu from "../Components/Menu";
 import styled from "styled-components";
 
-import topime from '../imeg/topime.jpg';
-import tornPart from '../imeg/tornPart.png';
-
+import topime from "../imeg/topime.jpg";
+import tornPart from "../imeg/tornPart.png";
 
 const HedersStyle = styled.header`
   position: relative;
   height: 100vh;
-  top: -5em;
+  top: -2.6em;
   background-color: #9c5959;
   background-image: url(${topime});
   background-repeat: no-repeat;
@@ -24,7 +23,7 @@ const HedersStyle = styled.header`
     height: 100px;
     display: block;
     visibility: visible;
-    content: '';
+    content: "";
     background: url(${tornPart});
     background-size: cover;
   }
@@ -39,17 +38,16 @@ const HedersStyle = styled.header`
   }
 `;
 
-
 const PHeaderStyle = styled.div`
   position: relative;
   top: 2.5em;
   width: 100%;
   text-align: center;
-  font-family: 'Pacifico', cursive;
+  font-family: "Pacifico", cursive;
   font-size: calc(58px + 24 * (100vw / 1920));
   text-shadow: 10px 10px 30px #d6d7dc, -10px -10px 30px #dedae0;
   animation: scales 2s linear;
-  margin: .5em 0;
+  margin: 0.5em 0;
   letter-spacing: 3px;
 
   @media (max-width: 990px) {
@@ -63,17 +61,16 @@ const PHeaderStyle = styled.div`
   }
 `;
 
-
 function Heders() {
-    return (
-        <HedersStyle>
-            <Menu/>
-            <PHeaderStyle>TrailBear </PHeaderStyle>
-            <PHeaderStyle>Изделия </PHeaderStyle>
-            <PHeaderStyle> ручной работы</PHeaderStyle>
-            <PHeaderStyle>из кожи</PHeaderStyle>
-        </HedersStyle>
-    );
+  return (
+    <HedersStyle>
+      <Menu />
+      <PHeaderStyle>TrailBear </PHeaderStyle>
+      <PHeaderStyle>Изделия </PHeaderStyle>
+      <PHeaderStyle> ручной работы</PHeaderStyle>
+      <PHeaderStyle>из кожи</PHeaderStyle>
+    </HedersStyle>
+  );
 }
 
 export default Heders;
