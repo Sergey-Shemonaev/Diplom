@@ -52,7 +52,7 @@ function Footer() {
       </Feedback>
       <BottomStyled>
         <p>TrailBear</p>
-        <p style={{ transform: "scale(1.2)" }}>
+        <p >
           <a href="https://vk.com/misha0382" target="_blank" rel="noopener noreferrer">
             <img src={Vk} alt="Vk" />
           </a>
