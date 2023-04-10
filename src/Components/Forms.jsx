@@ -60,7 +60,11 @@ function Forma() {
     <DivStyle>
       <H5Style>Есть вопросы? Нужна консультация?</H5Style>
       <Formik
-        initialValues={{ email: "", tel: "" }}
+        initialValues={{
+          firstName: "",
+          email: "",
+          tel: "",
+        }}
         validate={(values) => {
           const errors = {};
           if (!values.email) {
@@ -89,11 +93,18 @@ function Forma() {
           isSubmitting,
         }) => (
           <FormikStyle onSubmit={handleSubmit}>
-            <LabelStule>
+            <LabelStule htmlFor="firstName">
               <h5>Введите Имя</h5>
-              <InputStule type="text" placeholder="Введите Имя" />
+              <InputStule
+                type="text"
+                name="firstName"
+                onChange={handleChange}
+                onBlur={handleBlur}
+                value={values.firstName}
+                // placeholder="Введите Имя"
+              />
             </LabelStule>
-            <LabelStule>
+            <LabelStule htmlFor="email">
               <h5>Введите Email</h5>
               <InputStule
                 type="email"
@@ -106,7 +117,14 @@ function Forma() {
             </LabelStule>
             <LabelStule>
               <h5>Введите номер телефона</h5>
-              <InputStule type="tel" placeholder="+7 xxx-xxx-xx" />
+              <InputStule
+                type="tel"
+                name="tel"
+                onChange={handleChange}
+                onBlur={handleBlur}
+                value={values.tel}
+                //   placeholder="+7 xxx-xxx-xx"
+              />
             </LabelStule>
             <ButtonStyle type="submit" disabled={isSubmitting}>
               Оставить заявку
