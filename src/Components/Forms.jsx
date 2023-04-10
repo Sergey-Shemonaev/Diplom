@@ -25,6 +25,21 @@ const FormikStyle = styled.form`
   flex-direction: column;
   width: 100%;
   gap: 10px;
+  text-align: center;
+  font-family: Pacifico, cursive;
+`;
+
+const LabelStule = styled.label`
+  border-bottom: 1px solid black;
+  margin: 1em 0;
+  text-align: center;
+`;
+
+const InputStule = styled.input`
+  width: 100%;
+  border: none;
+  padding: 5px 0;
+  text-align: center;
 `;
 
 function Forma() {
@@ -60,35 +75,19 @@ function Forma() {
           isSubmitting,
         }) => (
           <FormikStyle onSubmit={handleSubmit}>
-            <input type="text" name="name" value={values.text} />
-            <input
-              type="email"
-              name="email"
-              onChange={handleChange}
-              onBlur={handleBlur}
-              value={values.email}
-            />
-            {errors.email && touched.email && errors.email}
-            <input
-              type="tel"
-              name="tel"
-              onChange={handleChange}
-              onBlur={handleBlur}
-              value={values.tel}
-            />
-            <button type="submit" disabled={isSubmitting}>
-              Submit
-            </button>
-
-            <input
-              type="text"
-              required="required"
-              pattern="[+)( .-]*[0-9]+[0-9+)( .-]*"
-              minLength="6"
-              name="Введите телефон"
-              placeholder="+7 xxx-xxx-xxx"
-              autoComplete="off"
-            />
+            <h5 >Есть вопросы? Нужна консультация?</h5>
+            <LabelStule>
+              <h5>Введите Имя</h5>
+              <InputStule type="text" placeholder="Введите Имя" />
+            </LabelStule>
+            <LabelStule>
+              <h5>Введите Email</h5>
+              <InputStule type="email" placeholder="Введите Email" />
+            </LabelStule>
+            <LabelStule>
+              <h5>Введите номер телефона</h5>
+              <InputStule type="tel" placeholder="+7 xxx-xxx-xx" />
+            </LabelStule>
           </FormikStyle>
         )}
       </Formik>

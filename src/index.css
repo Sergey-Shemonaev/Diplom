@@ -97,10 +97,6 @@ html {
   height: 60px;
   position: fixed;
   z-index: 10;
-  /* margin: 0px;
-  padding: 0px; */
-  /* top: 0px;
-  left: 0px; */
   transition: all 0.8s;
 }
 
