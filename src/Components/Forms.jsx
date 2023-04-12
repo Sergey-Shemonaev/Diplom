@@ -114,6 +114,7 @@ function Forma() {
                 value={values.email}
                 // placeholder="Введите Email"
               />
+              {errors.email && touched.email && errors.email}
             </LabelStule>
             <LabelStule>
               <h5>Введите номер телефона</h5>
@@ -123,7 +124,7 @@ function Forma() {
                 onChange={handleChange}
                 onBlur={handleBlur}
                 value={values.tel}
-                //   placeholder="+7 xxx-xxx-xx"
+                //  placeholder="+7 xxx-xxx-xx"
               />
             </LabelStule>
             <ButtonStyle type="submit" disabled={isSubmitting}>
