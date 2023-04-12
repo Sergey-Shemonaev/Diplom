@@ -1,6 +1,6 @@
 // import React from 'react';
 import { useState } from 'react';
-import {  animateScroll as scroll } from "react-scroll";
+import { animateScroll as scroll } from "react-scroll";
 
 import styled from "styled-components";
 
@@ -26,21 +26,21 @@ const NavLinkStyled = styled(Nav.Link)`
 `;
 
 const Menu = () => {
-    const [colorChange, setColorchange] = useState(false);
+  const [colorChange, setColorchange] = useState(false);
 
-    function changeHeaderColor() {
-      if(window.scrollY >= 100){
-        setColorchange(true);
-      }
-      else{
-        setColorchange(false);
-      }
+  function changeHeaderColor() {
+    if (window.scrollY >= 100) {
+      setColorchange(true);
     }
-  
-    window.addEventListener ('scroll', changeHeaderColor);
+    else {
+      setColorchange(false);
+    }
+  }
+
+  window.addEventListener('scroll', changeHeaderColor);
   return (
-    <nav   onClick={()=>scroll.scrollToTop()}>
-      <Navbar expand="lg" fixed="top"  className={colorChange ? "header colorChange" : "header"}>
+    <nav onClick={() => scroll.scrollToTop()}>
+      <Navbar expand="lg" fixed="top" className={colorChange ? "header colorChange" : "header"}>
         <Navbar.Brand></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

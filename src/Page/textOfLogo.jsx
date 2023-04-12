@@ -9,6 +9,10 @@ const TextOfLogoStyle = styled.div`
   padding:  2em 8em;
   @media (max-width: 990px) {
     flex-direction: column;
+  };
+
+  @media (max-width: 768px) {
+    padding:  2em;
   }
 `;
 

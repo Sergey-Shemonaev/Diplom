@@ -1,4 +1,3 @@
-// import Form from 'react-bootstrap/Form';
 import styled from "styled-components";
 import { Formik } from "formik";
 
@@ -12,7 +11,6 @@ const DivStyle = styled.div`
   height: 100%;
 
   @media (min-width: 320px) and (max-width: 425px) {
-    /* padding: 2em; */
     opacity: 0.5;
     width: 100%;
     margin: 2em auto;
@@ -101,7 +99,7 @@ function Forma() {
                 onChange={handleChange}
                 onBlur={handleBlur}
                 value={values.firstName}
-                // placeholder="Введите Имя"
+              // placeholder="Введите Имя"
               />
             </LabelStule>
             <LabelStule htmlFor="email">
@@ -112,7 +110,7 @@ function Forma() {
                 onChange={handleChange}
                 onBlur={handleBlur}
                 value={values.email}
-                // placeholder="Введите Email"
+              // placeholder="Введите Email"
               />
               {errors.email && touched.email && errors.email}
             </LabelStule>
@@ -124,7 +122,7 @@ function Forma() {
                 onChange={handleChange}
                 onBlur={handleBlur}
                 value={values.tel}
-                //  placeholder="+7 xxx-xxx-xx"
+              //  placeholder="+7 xxx-xxx-xx"
               />
             </LabelStule>
             <ButtonStyle type="submit" disabled={isSubmitting}>

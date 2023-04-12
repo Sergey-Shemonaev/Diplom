@@ -17,7 +17,7 @@ const CaruselStyle = styled.div`
 const H1Style = styled.h1`
   text-align: center;
   font-family: "Pacifico", cursive;
-  letter-spacing: 0.12em;
+  /* letter-spacing: 0.12em; */
 `;
 
 const SwiperStyle = styled(Swiper)`
@@ -35,9 +35,14 @@ const SwiperSlideStyle = styled(SwiperSlide)`
 `;
 
 const ImageStyle = styled.img`
-  padding: 10px 0;
-  width: 83%;
+  margin: 10px 0;
+  width: 84%;
   height: auto;
+
+  @media (max-width: 1024px) {
+    width: 80%;
+
+  }
 `;
 
 export default function ComponentCarusel() {
