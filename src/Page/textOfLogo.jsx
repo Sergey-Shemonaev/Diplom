@@ -1,48 +1,49 @@
 import styled from "styled-components";
 
-
 import Logos1 from "../imeg/Logos1.jpg";
 import Logos2 from "../imeg/Logos2.jpg";
 
 const TextOfLogoStyle = styled.div`
   display: flex;
-  //gap: 3px;
-  padding: 2em;
+  gap: 30px;
+  padding:  2em 8em;
   @media (max-width: 990px) {
     flex-direction: column;
   }
 `;
 
 const TextStyle = styled.div`
-  width: 75%;
-  font-family: 'Pacifico', cursive;
-  font-size: 1.5em;
+  width: 70%;
+  font-family: "Pacifico", cursive;
+  font-size: 1.3em;
   color: rgb(13, 16, 21);
   text-align: justify;
   @media (max-width: 1300px) {
-    font-size: 1.2em;
-  }
-
-  @media (max-width: 1024px) {
     font-size: 1.1em;
   }
 
-  @media (max-width: 768pc) {
-    width: 95%;
-
+  @media (max-width: 1024px) {
+    font-size: 1em;
   }
+
+  @media (max-width: 768pc) {
+    width: 100%;
+  }
+`;
+
+const H4Style = styled.h4`
+  text-align: center;
 `;
 
 const BoxStyle = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  @media (max-width: 768pc) {
-    width: 95%;
+  width: 50%;
 
-
+  @media (max-width: 990px) {
+    width: 100%;
   }
-
 `;
 
 const BordersStyle = styled.div`
@@ -63,9 +64,7 @@ const BordersStyle = styled.div`
   }
   @media (max-width: 768pc) {
     margin: 2.5em;
-
   }
-  
 `;
 
 const ImgContainerStyle = styled.div`
@@ -90,7 +89,6 @@ const ImgContainerStyle = styled.div`
     bottom: 0;
     left: 0;
   }
-
 `;
 
 const WrapperStyle = styled.div`
@@ -100,65 +98,66 @@ const WrapperStyle = styled.div`
 const ImgFrontStyle = styled.img`
   border-radius: 50%;
   backface-visibility: hidden;
-  width: 20em;
+  width: 18em;
   height: auto;
   @media (max-width: 1300px) {
-    width: 15em
+    width: 15em;
   }
 
   @media (max-width: 1024px) {
-    width: 11em
+    width: 11em;
   }
-
 `;
 
 const ImgBackStyle = styled.img`
   border-radius: 50%;
   backface-visibility: hidden;
-  width: 20em;
+  width: 18em;
   height: auto;
   position: absolute;
   left: 0;
   transform: rotateY(180deg);
   @media (max-width: 1300px) {
-    width: 15em
+    width: 15em;
   }
   @media (max-width: 1024px) {
-    width: 11em
+    width: 11em;
   }
 `;
 
-
 function TextOfLogo() {
-    return (
-        <TextOfLogoStyle>
-            <TextStyle>
-                <p style={{textAlign: 'center'}}>Приветствую всех на своём сайте!</p>
-                Приветствую всех на своём сайте! Меня зовут Михаил и я мастер кожаных изделий ручной работы в
-                винтажном стиле. Мне очень полюбилось это ремесло и каждое своё изделие я пропускаю через себя,
-                вкладывая в него частичку своей души, которой в последствии я делюсь с вами.
-                Каждое изделие изготавливается полностью вручную. Детали изделия натираются специальным составом для
-                защиты от влаги, а так же патинируются воском для придания изделию необычного перехода цвета, что
-                делает его нестандартным и создаёт эффект "поношенности". Края деталей так же обрабатываются,
-                подкрашиваются и натираются до блеска.
-                Каждая деталь пробивается так же вручную, а после сшивается шорно-седельным швом, который является
-                самым крепким и надёжным, что не может сравниться с машинным.
-                Для пошива изделий используется только натуральная кожа КРС и вощеные нити.
-                У меня нет большой команды, поэтому занимаюсь каждым изделием лично.
-                Изделия, которые вы приобретёте, будут служить вам или вашим близким долгие годы.
-            </TextStyle>
-            <BoxStyle>
-                <WrapperStyle>
-                    <BordersStyle>
-                        <ImgContainerStyle>
-                            <ImgFrontStyle src={Logos1} alt="logotip1"/>
-                            <ImgBackStyle src={Logos2} alt="logotip2"/>
-                        </ImgContainerStyle>
-                    </BordersStyle>
-                </WrapperStyle>
-            </BoxStyle>
-        </TextOfLogoStyle>
-    );
+  return (
+    <TextOfLogoStyle>
+      <TextStyle>
+        <H4Style>Приветствую всех на своём сайте!</H4Style>
+        Приветствую всех на своём сайте! Меня зовут Михаил и я мастер кожаных
+        изделий ручной работы в винтажном стиле. Мне очень полюбилось это
+        ремесло и каждое своё изделие я пропускаю через себя, вкладывая в него
+        частичку своей души, которой в последствии я делюсь с вами. Каждое
+        изделие изготавливается полностью вручную. Детали изделия натираются
+        специальным составом для защиты от влаги, а так же патинируются воском
+        для придания изделию необычного перехода цвета, что делает его
+        нестандартным и создаёт эффект "поношенности". Края деталей так же
+        обрабатываются, подкрашиваются и натираются до блеска. Каждая деталь
+        пробивается так же вручную, а после сшивается шорно-седельным швом,
+        который является самым крепким и надёжным, что не может сравниться с
+        машинным. Для пошива изделий используется только натуральная кожа КРС и
+        вощеные нити. У меня нет большой команды, поэтому занимаюсь каждым
+        изделием лично. Изделия, которые вы приобретёте, будут служить вам или
+        вашим близким долгие годы.
+      </TextStyle>
+      <BoxStyle>
+        <WrapperStyle>
+          <BordersStyle>
+            <ImgContainerStyle>
+              <ImgFrontStyle src={Logos1} alt="logotip1" />
+              <ImgBackStyle src={Logos2} alt="logotip2" />
+            </ImgContainerStyle>
+          </BordersStyle>
+        </WrapperStyle>
+      </BoxStyle>
+    </TextOfLogoStyle>
+  );
 }
 
 export default TextOfLogo;

@@ -11,7 +11,7 @@ const ReviewsStyle = styled.div`
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  width: calc(80% - 10px);
+  width: calc(90% - 8em);
   /* height: 100% */
   margin: 0 auto;
   @media (max-width: 768px) {
@@ -46,7 +46,7 @@ const ImgBorderStyle = styled.div`
 
 const TextStyle = styled.p`
   font-family: "Pacifico", cursive;
-  /* font-size: 1.5em; */
+  font-size: 1.1em;
   /* width: 30%; */
   //@media (max-width: 991px) {
   //  width: calc(70% - 10px);

@@ -11,7 +11,7 @@ import styled from "styled-components";
 
 const CaruselStyle = styled.div`
   margin: 1em auto;
-  width: 97%;
+  width: 100%;
 `;
 
 const H1Style = styled.h1`
@@ -21,7 +21,7 @@ const H1Style = styled.h1`
 `;
 
 const SwiperStyle = styled(Swiper)`
-  width: 100%;
+  width: 95%;
   margin-top: 2em;
 `;
 
@@ -36,11 +36,8 @@ const SwiperSlideStyle = styled(SwiperSlide)`
 
 const ImageStyle = styled.img`
   padding: 10px 0;
-  width: 85%;
+  width: 83%;
   height: auto;
-  /* width: 80vw;
-  height: 70vh; */
-  /* object-fit: cover; */
 `;
 
 export default function ComponentCarusel() {

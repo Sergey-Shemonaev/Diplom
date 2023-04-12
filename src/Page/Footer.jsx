@@ -6,8 +6,9 @@ import Vk from "../imeg/vk.png";
 import Telegram from "../imeg/telegram.png";
 
 const DivStule = styled.div`
-  margin-top: 3em;
+  margin: 3em auto;
   padding: 0 2em;
+  width: calc(98% - 8em);
 `;
 
 const Feedback = styled.div`
@@ -24,7 +25,7 @@ const Feedback = styled.div`
 const ImgStyle = styled.img`
   width: 50%;
   @media (max-width: 990px) {
-    width: 50%;
+    width: 60%;
   }
   @media (max-width: 768px) {
     display: none;
