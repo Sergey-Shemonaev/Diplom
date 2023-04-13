@@ -1,9 +1,8 @@
 // import React from 'react';
+// import { animateScroll as scroll } from "react-scroll";
+
 import { useState } from 'react';
-import { animateScroll as scroll } from "react-scroll";
-
 import styled from "styled-components";
-
 import { Navbar, Nav } from "react-bootstrap";
 
 const NavStyle = styled(Nav)`
@@ -39,12 +38,13 @@ const Menu = () => {
 
   window.addEventListener('scroll', changeHeaderColor);
   return (
-    <nav onClick={() => scroll.scrollToTop()}>
+    <nav >
       <Navbar expand="lg" fixed="top" 
       className={colorChange ? "header colorChange" : "header"}
       collapseOnSelect={true}
+      // onClick={() => scroll.scrollToTop()}
       >
-        <Navbar.Brand></Navbar.Brand>
+        <Navbar.Brand ></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <NavStyle>

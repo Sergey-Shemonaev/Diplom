@@ -10,6 +10,10 @@ const DivStyle = styled.div`
   justify-content: space-around;
   height: 100%;
 
+  @media (min-width: 768px) and (max-width: 900px) {
+  font-size: 1em;
+  }
+
   @media (min-width: 426px) and (max-width: 768px) {
     opacity: 0.5;
     width: 100%;
@@ -25,6 +29,7 @@ const DivStyle = styled.div`
 
 const H5Style = styled.h5`
   padding: 10px;
+
 `;
 
 const FormikStyle = styled.form`

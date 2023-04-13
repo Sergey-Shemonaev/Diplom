@@ -4,6 +4,8 @@ import Forma from "../Components/Forms";
 import MyColages from "../imeg/MyCollages.jpg";
 import Vk from "../imeg/vk.png";
 import Telegram from "../imeg/telegram.png";
+import { animateScroll as scroll } from "react-scroll";
+
 
 const DivStule = styled.div`
   margin: 0 auto;
@@ -36,12 +38,18 @@ const BottomStyled = styled.footer`
   width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 1em;
   font-size: 1.5em;
   font-family: "Pacifico", cursive;
   margin-top: 1em;
   &:hover {
   }
+`;
+
+const ButtonTrailBear = styled.button`
+  border: none;
+  background: none;
 `;
 
 function Footer() {
@@ -52,7 +60,8 @@ function Footer() {
         <Forma />
       </Feedback>
       <BottomStyled>
-        <p>TrailBear</p>
+      
+        <ButtonTrailBear onClick={() => scroll.scrollToTop()} >TrailBear</ButtonTrailBear>
         <p >
           <a href="https://vk.com/misha0382" target="_blank" rel="noopener noreferrer">
             <img src={Vk} alt="Vk" />
