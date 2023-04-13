@@ -17,7 +17,7 @@ const ReviewsStyle = styled.div`
   @media (max-width: 991px){
     display: flex;
     flex-direction: column;
-    width: calc(90% - 8em);
+    width: calc(90% - 3em);
 
   };
 

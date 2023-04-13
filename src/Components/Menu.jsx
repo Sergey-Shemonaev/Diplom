@@ -40,7 +40,10 @@ const Menu = () => {
   window.addEventListener('scroll', changeHeaderColor);
   return (
     <nav onClick={() => scroll.scrollToTop()}>
-      <Navbar expand="lg" fixed="top" className={colorChange ? "header colorChange" : "header"}>
+      <Navbar expand="lg" fixed="top" 
+      className={colorChange ? "header colorChange" : "header"}
+      collapseOnSelect={true}
+      >
         <Navbar.Brand></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

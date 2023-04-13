@@ -14,7 +14,7 @@ const CaruselStyle = styled.div`
   width: 100%;
 `;
 
-const H1Style = styled.h1`
+const H2Style = styled.h2`
   text-align: center;
   font-family: "Pacifico", cursive;
   /* letter-spacing: 0.12em; */
@@ -48,7 +48,7 @@ const ImageStyle = styled.img`
 export default function ComponentCarusel() {
   return (
     <CaruselStyle>
-      <H1Style>Немного из процесса работы</H1Style>
+      <H2Style>Немного из процесса работы</H2Style>
       <SwiperStyle
         spaceBetween={50}
         centeredSlides={true}

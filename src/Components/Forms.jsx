@@ -10,14 +10,13 @@ const DivStyle = styled.div`
   justify-content: space-around;
   height: 100%;
 
-  @media (min-width: 320px) and (max-width: 425px) {
+  @media (min-width: 426px) and (max-width: 768px) {
     opacity: 0.5;
     width: 100%;
     margin: 2em auto;
   }
 
-  @media (min-width: 426px) and (max-width: 768px) {
-    padding: 2em;
+  @media (min-width: 320px) and (max-width: 425px) {
     opacity: 0.5;
     width: 100%;
     margin: 2em auto;

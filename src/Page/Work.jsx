@@ -26,10 +26,14 @@ const SectionWrk = styled.div`
 
   @media (max-width: 796px) {
     grid-template-columns: 1fr 1fr;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 2em;
   }
 
   @media (max-width: 500px) {
     grid-template-columns: 1fr;
+    padding: 0 1.5em;
   } ;
 `;
 
@@ -54,6 +58,12 @@ const CardStyle = styled.div`
   &:hover {
     box-shadow: 0 0 10px 2px #bebdbd;
   }
+
+  @media (max-width: 500px) {
+    margin: 0 auto;
+    /* width: 20em; */
+  } ;
+
 `;
 
 const ImageStyle = styled.img`
