@@ -23,6 +23,15 @@ const NavLinkStyled = styled(Nav.Link)`
     transform: scale(1.1);
   }
 `;
+const NavbarCollapseStyled = styled(Navbar.Collapse)`
+  background-color: transparent;
+  transition: height 0.35s easNavbarCollapseStylede, background-color 0.35s ease;
+
+  &.show {
+    background-color: rgba(235, 235, 235, 0.884);
+    padding: 1em 0;
+  }
+`;
 
 const Menu = () => {
   const [colorChange, setColorchange] = useState(false);
@@ -46,13 +55,13 @@ const Menu = () => {
       >
         <Navbar.Brand ></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
+        <NavbarCollapseStyled id="basic-navbar-nav" bg='#4f3a3a'>
           <NavStyle>
             <NavLinkStyled href="#my_work">Мои работы</NavLinkStyled>
             <NavLinkStyled href="#reviews">Отзывы</NavLinkStyled>
             <NavLinkStyled href="#feedback">Контакты</NavLinkStyled>
           </NavStyle>
-        </Navbar.Collapse>
+        </NavbarCollapseStyled>
       </Navbar>
     </nav>
   );
