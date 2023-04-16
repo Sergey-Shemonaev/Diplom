@@ -7,11 +7,11 @@ import styled from "styled-components";
 const FormikStyle = styled.form`
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
 `;
 
 function Modals(props) {
-  const handleClose = () => props.hide();
+  const handleClose = (isSubmitting) => props.hide();
 
   return (
     <>
@@ -25,7 +25,11 @@ function Modals(props) {
         </Modal.Header>
         <Modal.Body>
           <Formik
-            initialValues={{ email: "", password: "" }}
+            initialValues={{
+              firstName: "",
+              email: "",
+              tel: "",
+            }}
             validate={(values) => {
               const errors = {};
               if (!values.email) {
@@ -39,7 +43,7 @@ function Modals(props) {
             }}
             onSubmit={(values, { setSubmitting }) => {
               setTimeout(() => {
-                alert(JSON.stringify(values, null, 2));
+                console.log(JSON.stringify(values, null, 2));
                 setSubmitting(false);
               }, 400);
             }}
@@ -55,7 +59,12 @@ function Modals(props) {
             }) => (
               <FormikStyle onSubmit={handleSubmit}>
                 <label>Введите имя</label>
-                <input type="text" name="name" />
+                <input
+                  type="text"
+                  name="firstName"
+                  onChange={handleChange}
+                  onBlur={handleBlur}
+                  value={values.firstName} />
                 <label>Введите E-mail</label>
 
                 <input
@@ -67,16 +76,18 @@ function Modals(props) {
                 />
                 {errors.email && touched.email && errors.email}
                 <label>Введите номер телефона</label>
-                <input type="tel" />
+                <input type="tel"
+                  name="tel"
+                  onChange={handleChange}
+                  onBlur={handleBlur}
+                  value={values.tel} />
+                <button type="submit" disabled={isSubmitting} onClick={handleClose}>
+                  Оформить
+                </button>
               </FormikStyle>
             )}
           </Formik>
         </Modal.Body>
-        <Modal.Footer>
-          <button variant="primary" onClick={handleClose}>
-            Оформить
-          </button>
-        </Modal.Footer>
       </Modal>
     </>
   );
