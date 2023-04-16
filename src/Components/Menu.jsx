@@ -1,6 +1,3 @@
-// import React from 'react';
-// import { animateScroll as scroll } from "react-scroll";
-
 import { useState } from 'react';
 import styled from "styled-components";
 import { Navbar, Nav } from "react-bootstrap";
@@ -23,6 +20,16 @@ const NavLinkStyled = styled(Nav.Link)`
     transform: scale(1.1);
   }
 `;
+const BgcMobiStyle = styled.div`
+position: fixed;
+top: 0;
+  width: 100%;
+  background-color: rgba(235, 235, 235, 0.884);
+  z-index: 111;
+  height: 210px;
+  transition: linear 2s;
+`;
+
 
 const Menu = () => {
   const [colorChange, setColorchange] = useState(false);
@@ -37,24 +44,34 @@ const Menu = () => {
   }
 
   window.addEventListener('scroll', changeHeaderColor);
+  const [isShown, setIsShown] = useState(false);
+
+  const handleClick = event => {
+    console.log('Я тут ');
+    setIsShown(current => !current);
+  };
+
+
   return (
-    <nav >
-      <Navbar expand="lg" fixed="top" 
-      className={colorChange ? "header colorChange" : "header"}
-      collapseOnSelect={true}
-      // onClick={() => scroll.scrollToTop()}
+    < >
+      {isShown && (
+        <BgcMobiStyle />
+      )}
+      <Navbar expand="lg" fixed="top"
+        className={colorChange ? "header colorChange" : "header"}
+        collapseOnSelect={true}
       >
         <Navbar.Brand ></Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav" >
+        <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={handleClick} />
+        <Navbar.Collapse id="basic-navbar-nav"  >
           <NavStyle>
-            <NavLinkStyled href="#my_work">Мои работы</NavLinkStyled>
-            <NavLinkStyled href="#reviews">Отзывы</NavLinkStyled>
-            <NavLinkStyled href="#feedback">Контакты</NavLinkStyled>
+            <NavLinkStyled onClick={event => setIsShown(false)} href="#my_work">Мои работы</NavLinkStyled>
+            <NavLinkStyled onClick={event => setIsShown(false)} href="#reviews">Отзывы</NavLinkStyled>
+            <NavLinkStyled onClick={event => setIsShown(false)} href="#feedback">Контакты</NavLinkStyled>
           </NavStyle>
         </Navbar.Collapse>
       </Navbar>
-    </nav>
+    </>
   );
 };
 
