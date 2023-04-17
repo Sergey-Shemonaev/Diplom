@@ -103,7 +103,6 @@ function Forma() {
                 onChange={handleChange}
                 onBlur={handleBlur}
                 value={values.firstName}
-              // placeholder="Введите Имя"
               />
             </LabelStule>
             <LabelStule htmlFor="email">
@@ -114,7 +113,6 @@ function Forma() {
                 onChange={handleChange}
                 onBlur={handleBlur}
                 value={values.email}
-              // placeholder="Введите Email"
               />
               {errors.email && touched.email && errors.email}
             </LabelStule>
@@ -126,7 +124,6 @@ function Forma() {
                 onChange={handleChange}
                 onBlur={handleBlur}
                 value={values.tel}
-              //  placeholder="+7 xxx-xxx-xx"
               />
             </LabelStule>
             <ButtonStyle type="submit" disabled={isSubmitting}>

@@ -11,6 +11,10 @@ const DivStule = styled.div`
   margin: 0 auto;
   padding: 0 2em;
   width: calc(98% - 8em);
+  
+  @media (max-width: 990px) {
+    width:  calc(98% - 2em);
+  }
 `;
 
 const Feedback = styled.div`
@@ -60,7 +64,7 @@ function Footer() {
         <Forma />
       </Feedback>
       <BottomStyled>
-      
+
         <ButtonTrailBear onClick={() => scroll.scrollToTop()} >TrailBear</ButtonTrailBear>
         <p >
           <a href="https://vk.com/misha0382" target="_blank" rel="noopener noreferrer">

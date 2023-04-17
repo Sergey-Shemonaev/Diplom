@@ -16,13 +16,14 @@ const NavLinkStyled = styled(Nav.Link)`
   color: rgb(0, 0, 0);
   font-family: "Pacifico", cursive;
   font-size: 1.5em;
+  
   &:hover {
     transform: scale(1.1);
   }
 `;
 const BgcMobiStyle = styled.div`
-position: fixed;
-top: 0;
+  position: fixed;
+  top: 0;
   width: 100%;
   background-color: rgba(235, 235, 235, 0.884);
   z-index: 111;
@@ -46,8 +47,7 @@ const Menu = () => {
   window.addEventListener('scroll', changeHeaderColor);
   const [isShown, setIsShown] = useState(false);
 
-  const handleClick = event => {
-    console.log('Я тут ');
+  const handleClick = () => {
     setIsShown(current => !current);
   };
 
@@ -65,9 +65,9 @@ const Menu = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={handleClick} />
         <Navbar.Collapse id="basic-navbar-nav"  >
           <NavStyle>
-            <NavLinkStyled onClick={event => setIsShown(false)} href="#my_work">Мои работы</NavLinkStyled>
-            <NavLinkStyled onClick={event => setIsShown(false)} href="#reviews">Отзывы</NavLinkStyled>
-            <NavLinkStyled onClick={event => setIsShown(false)} href="#feedback">Контакты</NavLinkStyled>
+            <NavLinkStyled onClick={() => setIsShown(false)} href="#my_work">Мои работы</NavLinkStyled>
+            <NavLinkStyled onClick={() => setIsShown(false)} href="#reviews">Отзывы</NavLinkStyled>
+            <NavLinkStyled onClick={() => setIsShown(false)} href="#feedback">Контакты</NavLinkStyled>
           </NavStyle>
         </Navbar.Collapse>
       </Navbar>

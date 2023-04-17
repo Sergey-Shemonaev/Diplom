@@ -17,7 +17,6 @@ const CaruselStyle = styled.div`
 const H2Style = styled.h2`
   text-align: center;
   font-family: "Pacifico", cursive;
-  /* letter-spacing: 0.12em; */
 `;
 
 const SwiperStyle = styled(Swiper)`
@@ -36,7 +35,8 @@ const SwiperSlideStyle = styled(SwiperSlide)`
 
 const ImageStyle = styled.img`
   margin: 10px 0;
-  width: 84%;
+  padding: 1em 0;
+  width: 85%;
   height: auto;
 
   @media (max-width: 1024px) {
@@ -66,7 +66,6 @@ export default function ComponentCarusel() {
         {processOfWorkArr.map((x) => (
           <SwiperSlideStyle
             key={x.id}
-            style={{ textAlign: "center", marginTop: "2em" }}
           >
             <ImageStyle src={x.image} alt="" />
           </SwiperSlideStyle>
