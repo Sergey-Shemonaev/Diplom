@@ -12,7 +12,6 @@ const NavLinkStyled = styled(Nav.Link)`
   font-weight: 400;
   letter-spacing: 2px;
   font-size: calc(12px + 8 * (100vw / 1920));
-  text-shadow: 10px 10px 30px #d6d7dc, -10px -10px 30px #dedae0;
   color: rgb(0, 0, 0);
   font-family: "Pacifico", cursive;
   font-size: 1.5em;

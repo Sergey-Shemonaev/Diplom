@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Forma from "../Components/Forms";
 import MyColages from "../imeg/MyCollages.jpg";
 import Vk from "../imeg/vk.png";
-import Telegram from "../imeg/telegram.png";
+import whatsapp from "../imeg/whatsapp.png";
 import { animateScroll as scroll } from "react-scroll";
 
 
@@ -72,8 +72,8 @@ function Footer() {
           </a>
         </p>
         <p>
-          <a href="https://vk.com/misha0382" target="_blank" rel="noopener noreferrer">
-            <img src={Telegram} alt="Telegram" />
+          <a href="https://wa.me/79969574045?text=Здравствуйте%2C+у+меня+есть+вопрос" target="_blank" rel="noopener noreferrer">
+            <img src={whatsapp} alt="whatsapp" />
           </a>
         </p>
       </BottomStyled>

@@ -2,7 +2,7 @@ import Menu from "../Components/Menu";
 import styled from "styled-components";
 
 import topime from "../imeg/topime.jpg";
-import topimeMoby from "../imeg/topime_moby.jpg";
+
 import tornPart from "../imeg/tornPart.png";
 
 const HedersStyle = styled.header`
@@ -14,9 +14,9 @@ const HedersStyle = styled.header`
   background-image: url(${topime});
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100% 100%;
-  background-attachment: fixed !important;
-  object-fit: cover;
+  /* background-size: 100% 100%; */
+  /* background-attachment: fixed !important; */
+  /* object-fit: cover; */
 
   &:after {
     position: absolute;
@@ -30,15 +30,7 @@ const HedersStyle = styled.header`
     background: url(${tornPart});
     background-size: cover;
   }
-  @media (max-width: 990px) {
-    height: 75vh;
-    background: url(${topimeMoby});
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100% 100%;
-    background-attachment: fixed !important;
-    object-fit: cover;
-  }
+
 
   @keyframes scales {
     0% {
@@ -57,7 +49,7 @@ const PHeaderStyle = styled.div`
   text-align: center;
   font-family: "Pacifico", cursive;
   font-size: calc(58px + 24 * (100vw / 1920));
-  text-shadow: 10px 10px 30px #d6d7dc, -10px -10px 30px #dedae0;
+  /* text-shadow: 10px 10px 30px #d6d7dc, -10px -10px 30px #dedae0; */
   animation: scales 2s linear;
   margin: 0.5em 0;
   letter-spacing: 3px;
