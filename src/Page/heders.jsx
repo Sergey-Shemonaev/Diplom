@@ -2,6 +2,7 @@ import Menu from "../Components/Menu";
 import styled from "styled-components";
 
 import topime from "../imeg/topime.jpg";
+import topimeMoby from "../imeg/topime_moby.jpg";
 import tornPart from "../imeg/tornPart.png";
 
 const HedersStyle = styled.header`
@@ -28,12 +29,19 @@ const HedersStyle = styled.header`
     content: "";
     background: url(${tornPart});
     background-size: cover;
+    
   }
   @media (max-width: 990px) {
-    width: auto;
-    height: 70vh;
+    /* width: auto;
     /* background-size: 100% 70%; */
+    height: 70vh; 
 
+    background: url(${topimeMoby});
+    background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  background-attachment: fixed !important;
+  object-fit: cover;
   }
 
 
