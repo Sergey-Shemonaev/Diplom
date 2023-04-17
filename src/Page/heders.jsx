@@ -14,9 +14,7 @@ const HedersStyle = styled.header`
   background-image: url(${topime});
   background-repeat: no-repeat;
   background-position: center;
-  /* background-size: 100% 100%; */
-  /* background-attachment: fixed !important; */
-  /* object-fit: cover; */
+  background-attachment: fixed !important;
 
   &:after {
     position: absolute;
