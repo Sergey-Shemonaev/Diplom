@@ -15,6 +15,7 @@ const HedersStyle = styled.header`
   background-position: center;
   background-size: 100% 100%;
   background-attachment: fixed !important;
+  object-fit: cover;
 
   &:after {
     position: absolute;
@@ -28,6 +29,11 @@ const HedersStyle = styled.header`
     background: url(${tornPart});
     background-size: cover;
   }
+  @media (max-width: 990px) {
+    width: auto;
+    height: auto;
+  }
+
 
   @keyframes scales {
     0% {
