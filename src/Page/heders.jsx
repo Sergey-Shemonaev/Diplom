@@ -29,21 +29,16 @@ const HedersStyle = styled.header`
     content: "";
     background: url(${tornPart});
     background-size: cover;
-    
   }
   @media (max-width: 990px) {
-    /* width: auto;
-    /* background-size: 100% 70%; */
-    height: 70vh; 
-
+    height: 75vh;
     background: url(${topimeMoby});
     background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100% 100%;
-  background-attachment: fixed !important;
-  object-fit: cover;
+    background-position: center;
+    background-size: 100% 100%;
+    background-attachment: fixed !important;
+    object-fit: cover;
   }
-
 
   @keyframes scales {
     0% {
