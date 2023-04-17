@@ -31,7 +31,9 @@ const HedersStyle = styled.header`
   }
   @media (max-width: 990px) {
     width: auto;
-    height: auto;
+    height: 70vh;
+    /* background-size: 100% 70%; */
+
   }
 
 

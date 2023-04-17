@@ -73,7 +73,7 @@ export const myWorks = [
         id: 1,
         title: 'Сумка женская',
         url: ladyBag1,
-        price: 4600,
+        price: 8900,
     },
     {
         id: 2,
