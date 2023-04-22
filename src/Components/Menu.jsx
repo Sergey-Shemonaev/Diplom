@@ -1,11 +1,18 @@
 import { useState } from 'react';
 import styled from "styled-components";
 import { Navbar, Nav } from "react-bootstrap";
+import Logo from '../imeg/logo192.png';
 
 const NavStyle = styled(Nav)`
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 90%;
+`;
+
+const ImageBrend = styled.img`
+  width: 2em;
+  height: 2em;
+  margin-left: 1em;
 `;
 
 const NavLinkStyled = styled(Nav.Link)`
@@ -60,7 +67,9 @@ const Menu = () => {
         className={colorChange ? "header colorChange" : "header"}
         collapseOnSelect={true}
       >
-        <Navbar.Brand ></Navbar.Brand>
+        <Navbar.Brand >
+          <ImageBrend src={Logo} alt='logo'/>
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={handleClick} />
         <Navbar.Collapse id="basic-navbar-nav"  >
           <NavStyle>

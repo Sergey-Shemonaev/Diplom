@@ -11,7 +11,6 @@ const PositionBtnStyled = styled.button`
 	right: 0.5em;
 	bottom: 2em;
 	z-index: 2;
-	border-radius:50%;
 	transition: 1s linear;
 
 	&:hover{

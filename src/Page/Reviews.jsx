@@ -11,22 +11,14 @@ const ReviewsStyle = styled.div`
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  /* width: calc(90% - 8em); */
   margin: 0 auto;
   padding: 0 2em;
 
   @media (max-width: 991px){
     display: flex;
     flex-direction: column;
-    width: calc(90% - 3em);
 
   };
-
-  /* @media (max-width: 768px) {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  } */
 `;
 const TestStyle = styled.div`
   display: flex;
@@ -43,8 +35,6 @@ const TestStyle = styled.div`
     margin: 0 auto;
     width: 100%;
     text-align: center;
-
-    //width: calc(80% - 10px);
   };
 
   

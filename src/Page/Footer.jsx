@@ -1,10 +1,8 @@
-/* eslint-disable jsx-a11y/alt-text */
 import styled from "styled-components";
 import Forma from "../Components/Forms";
 import MyColages from "../imeg/MyCollages.jpg";
 import Vk from "../imeg/vk.png";
 import whatsapp from "../imeg/whatsapp.png";
-// import { animateScroll as scroll } from "react-scroll";
 import ScrollButton from "../Components/ScrollTopComponent";
 
 
@@ -12,11 +10,6 @@ const DivStule = styled.div`
   margin: 0 auto;
   padding: 0 2em;
   width: 100%;
-  /* width: calc(98% - 8em); */
-  
-  @media (max-width: 990px) {
-    /* width:  calc(98% - 2em); */
-  }
 `;
 
 const Feedback = styled.div`
@@ -33,15 +26,9 @@ const Feedback = styled.div`
 
 const ImgStyle = styled.img`
   width: 100%;
-  /* width: 50%; */
   height: auto;
 
-  @media (max-width: 990px) {
-    display: none;
-
-    /* width: 50%; */
-  }
-  @media (max-width: 768px) {
+  @media (max-width: 1023px) {
     display: none;
   }
 `;
@@ -79,7 +66,7 @@ function Footer() {
           </a>
         </p>
         <p>
-          <a href="https://wa.me/79969574045?text=Здравствуйте%2C+у+меня+есть+вопрос" target="_blank" rel="noopener noreferrer">
+          <a href="https://wa.me/79969574045?text=Здравствуйте%2C+можно+узнать+о+товаре" target="_blank" rel="noopener noreferrer">
             <img src={whatsapp} alt="whatsapp" />
           </a>
         </p>

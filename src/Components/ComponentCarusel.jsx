@@ -10,8 +10,9 @@ import { processOfWorkArr } from "./imgList";
 import styled from "styled-components";
 
 const CaruselStyle = styled.div`
-  margin: 1em auto;
   width: 100%;
+  margin-top: 2em;
+  padding: 0 2em;
 `;
 
 const H2Style = styled.h2`
@@ -20,8 +21,7 @@ const H2Style = styled.h2`
 `;
 
 const SwiperStyle = styled(Swiper)`
-  width: 95%;
-  margin-top: 2em;
+  width: 100%;
 `;
 
 const SwiperSlideStyle = styled(SwiperSlide)`
@@ -38,11 +38,6 @@ const ImageStyle = styled.img`
   padding: 1em 0;
   width: 100%;
   height: auto;
-
-  @media (max-width: 1024px) {
-    width: 80%;
-
-  }
 `;
 
 export default function ComponentCarusel() {

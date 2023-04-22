@@ -13,8 +13,8 @@ const HedersStyle = styled.header`
   background-color: #9c5959;
   background-image: url(${topime});
   background-repeat: no-repeat;
- /* background-size: 100% 100%; */
-  background-position: center;
+ background-size: 100% 100%;
+  /* background-position: center; */
   background-attachment: fixed !important;
 
   &:after {
