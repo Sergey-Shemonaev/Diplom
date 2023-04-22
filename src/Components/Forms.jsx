@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Formik } from "formik";
 
 const DivStyle = styled.div`
-  width: 50%;
+  width: 100%;
   text-align: center;
   font-family: Pacifico, cursive;
   display: flex;
@@ -11,7 +11,9 @@ const DivStyle = styled.div`
   height: 100%;
 
   @media (min-width: 768px) and (max-width: 900px) {
-  font-size: 1em;
+    font-size: 1em;
+    width: 100%;
+
   }
 
   @media (min-width: 426px) and (max-width: 768px) {

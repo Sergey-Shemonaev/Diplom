@@ -11,6 +11,7 @@ import ScrollButton from "../Components/ScrollTopComponent";
 const DivStule = styled.div`
   margin: 0 auto;
   padding: 0 2em;
+  width: 100%;
   /* width: calc(98% - 8em); */
   
   @media (max-width: 990px) {
@@ -31,9 +32,14 @@ const Feedback = styled.div`
 `;
 
 const ImgStyle = styled.img`
-  width: 50%;
+  width: 100%;
+  /* width: 50%; */
+  height: auto;
+
   @media (max-width: 990px) {
-    width: 50%;
+    display: none;
+
+    /* width: 50%; */
   }
   @media (max-width: 768px) {
     display: none;

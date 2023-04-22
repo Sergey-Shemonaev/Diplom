@@ -8,10 +8,15 @@ const PositionBtnStyled = styled.button`
 	border: none;
 	background: transparent;
 	position: fixed;
-	right: 2em;
-	bottom: 1em;
+	right: 0.5em;
+	bottom: 2em;
 	z-index: 2;
 	border-radius:50%;
+	transition: 1s linear;
+
+	&:hover{
+		transform: scale(1.3);
+	}
 `;
 
 const ScrollButton = () => {
