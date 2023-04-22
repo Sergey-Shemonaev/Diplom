@@ -11,8 +11,9 @@ const ReviewsStyle = styled.div`
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  width: calc(90% - 8em);
+  /* width: calc(90% - 8em); */
   margin: 0 auto;
+  padding: 0 2em;
 
   @media (max-width: 991px){
     display: flex;

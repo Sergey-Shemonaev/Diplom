@@ -55,6 +55,7 @@ const InputStule = styled.input`
 const ButtonStyle = styled.button`
   border: 1px solid #bbbbbb;
   padding: 10px;
+  margin-top: 1em;
 `;
 
 function Forma() {

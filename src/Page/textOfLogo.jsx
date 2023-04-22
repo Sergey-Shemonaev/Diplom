@@ -6,7 +6,7 @@ import Logos2 from "../imeg/Logos2.jpg";
 const TextOfLogoStyle = styled.div`
   display: flex;
   gap: 30px;
-  padding:  2em 8em;
+  padding:0  2em ;
   @media (max-width: 990px) {
     flex-direction: column;
   };
@@ -17,7 +17,7 @@ const TextOfLogoStyle = styled.div`
 `;
 
 const TextStyle = styled.div`
-  width: 70%;
+  /* width: 70%; */
   font-family: "Pacifico", cursive;
   font-size: 1.3em;
   color: rgb(13, 16, 21);
@@ -31,7 +31,7 @@ const TextStyle = styled.div`
   }
 
   @media (max-width: 768pc) {
-    width: 100%;
+    /* width: 100%; */
   }
 `;
 
@@ -67,7 +67,7 @@ const BordersStyle = styled.div`
     transform: rotateZ(45deg);
   }
   @media (max-width: 768pc) {
-    margin: 2.5em;
+    margin: 2.6em;
   }
 `;
 

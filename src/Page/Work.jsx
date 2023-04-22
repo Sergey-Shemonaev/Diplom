@@ -15,9 +15,9 @@ const SectionWrk = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 10px;
-  max-width: 90%;
+  width: 100%; 
   margin: 2em auto;
-  padding: 0 4em;
+  padding: 0 2em;
   font-family: "Pacifico", cursive;
 
   @media (max-width: 1024px) {

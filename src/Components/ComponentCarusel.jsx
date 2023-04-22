@@ -36,7 +36,7 @@ const SwiperSlideStyle = styled(SwiperSlide)`
 const ImageStyle = styled.img`
   margin: 10px 0;
   padding: 1em 0;
-  width: 85%;
+  width: 100%;
   height: auto;
 
   @media (max-width: 1024px) {

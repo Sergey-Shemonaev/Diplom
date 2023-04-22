@@ -4,26 +4,28 @@ import Forma from "../Components/Forms";
 import MyColages from "../imeg/MyCollages.jpg";
 import Vk from "../imeg/vk.png";
 import whatsapp from "../imeg/whatsapp.png";
-import { animateScroll as scroll } from "react-scroll";
+// import { animateScroll as scroll } from "react-scroll";
+import ScrollButton from "../Components/ScrollTopComponent";
 
 
 const DivStule = styled.div`
   margin: 0 auto;
   padding: 0 2em;
-  width: calc(98% - 8em);
+  /* width: calc(98% - 8em); */
   
   @media (max-width: 990px) {
-    width:  calc(98% - 2em);
+    /* width:  calc(98% - 2em); */
   }
 `;
 
 const Feedback = styled.div`
-  width: 95%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1em;
   margin: 0 auto;
+  padding: 0 2em;
   @media (max-width: 768px) {
   }
 `;
@@ -64,8 +66,7 @@ function Footer() {
         <Forma />
       </Feedback>
       <BottomStyled>
-
-        <ButtonTrailBear onClick={() => scroll.scrollToTop()} >TrailBear</ButtonTrailBear>
+        <ButtonTrailBear  >TrailBear</ButtonTrailBear>
         <p >
           <a href="https://vk.com/misha0382" target="_blank" rel="noopener noreferrer">
             <img src={Vk} alt="Vk" />
@@ -77,6 +78,8 @@ function Footer() {
           </a>
         </p>
       </BottomStyled>
+      <ScrollButton />
+
     </DivStule>
   );
 }

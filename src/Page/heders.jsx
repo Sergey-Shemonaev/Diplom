@@ -8,7 +8,7 @@ import tornPart from "../imeg/tornPart.png";
 const HedersStyle = styled.header`
   position: relative;
   max-height: 100%;
-  height: 95vh;
+  height: 100vh;
   top: -2.6em;
   background-color: #9c5959;
   background-image: url(${topime});
