@@ -61,26 +61,7 @@ const BoxStyle = styled.div`
   }
 `;
 
-const BordersStyle = styled.div`
-  padding: 25px;
-  position: relative;
 
-  &:after {
-    content: "";
-    border: 2px solid rgb(166, 166, 166);
-    box-shadow: 0 0 10px 10px rgba(166, 166, 166, 0.62);
-    border-radius: 50px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    transform: rotateZ(45deg);
-  }
-  @media (max-width: 768pc) {
-    margin: 2.6em;
-  }
-`;
 
 const ImgContainerStyle = styled.div`
   position: relative;
@@ -163,12 +144,10 @@ function TextOfLogo() {
       </TextStyle>
       <BoxStyle>
         <WrapperStyle>
-          <BordersStyle>
             <ImgContainerStyle>
               <ImgFrontStyle src={Logos1} alt="logotip1" />
               <ImgBackStyle src={Logos2} alt="logotip2" />
             </ImgContainerStyle>
-          </BordersStyle>
         </WrapperStyle>
       </BoxStyle>
     </TextOfLogoStyle>
