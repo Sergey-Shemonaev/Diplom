@@ -6,13 +6,23 @@ import Logo from '../imeg/logo192.png';
 const NavStyle = styled(Nav)`
   justify-content: center;
   align-items: center;
-  width: 90%;
+  width: 100%;
 `;
 
 const ImageBrend = styled.img`
-  width: 2em;
-  height: 2em;
+  width: 2.2em;
+  height: 2.2em;
   margin-left: 1em;
+  animation: rotation infinite linear 5s;
+  
+  @keyframes rotation {
+    0% {
+      transform: rotateY(0deg);
+    }
+    100% {
+      transform: rotateY(360deg);
+    }
+  }
 `;
 
 const NavLinkStyled = styled(Nav.Link)`
@@ -31,9 +41,9 @@ const BgcMobiStyle = styled.div`
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: rgba(235, 235, 235, 0.884);
+  background-color: rgba(235, 235, 235, 0.973);
   z-index: 111;
-  height: 210px;
+  height: 220px;
   transition: linear 2s;
 `;
 
@@ -68,7 +78,7 @@ const Menu = () => {
         collapseOnSelect={true}
       >
         <Navbar.Brand >
-          <ImageBrend src={Logo} alt='logo'/>
+          <ImageBrend src={Logo} alt='logo' />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={handleClick} />
         <Navbar.Collapse id="basic-navbar-nav"  >

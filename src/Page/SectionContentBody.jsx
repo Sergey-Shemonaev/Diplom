@@ -6,6 +6,7 @@ import styled from "styled-components";
 
 const MainStyle = styled.main`
  margin: 0 1em;
+ background-color: #fff;
 `;
 
 function ContentBody() {

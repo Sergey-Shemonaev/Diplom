@@ -12,9 +12,12 @@ const PositionBtnStyled = styled.button`
 	bottom: 2em;
 	z-index: 2;
 	transition: 1s linear;
+	border-radius: 50%;
+
 
 	&:hover{
-		transform: scale(1.3);
+		transform: scale(1.1);
+		background: #afaeae;
 	}
 `;
 

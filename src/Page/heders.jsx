@@ -1,20 +1,19 @@
 import Menu from "../Components/Menu";
 import styled from "styled-components";
 
-import topime from "../imeg/topime.jpg";
+import topime from "../imeg/topime.jpeg";
 
 import tornPart from "../imeg/tornPart.png";
 
 const HedersStyle = styled.header`
   position: relative;
-  max-height: 100%;
-  height: 100vh;
+  max-width: 100%;
+  min-height: 100vh;
   top: -2.6em;
   background-color: #9c5959;
   background-image: url(${topime});
   background-repeat: no-repeat;
- background-size: 100% 100%;
-  /* background-position: center; */
+  background-position: center;
   background-attachment: fixed !important;
 
   &:after {
@@ -29,7 +28,6 @@ const HedersStyle = styled.header`
     background: url(${tornPart});
     background-size: cover;
   }
-
 
   @keyframes scales {
     0% {
@@ -52,26 +50,25 @@ const PHeaderStyle = styled.div`
   animation: scales 2s linear;
   margin: 0.5em 0;
   letter-spacing: 3px;
+  color: #000000;
 
   @media (max-width: 990px) {
-    top: 25%;
+    top: 4.5em;
+
     font-size: calc(42px + 18 * (100vw / 1920));
-  }
+  };
 
   @media (max-width: 720px) {
-    top: 25%;
+    top: 6.5em;
     font-size: calc(34px + 18 * (100vw / 1920));
-  }
+  };
 `;
 
 function Heders() {
   return (
     <HedersStyle>
       <Menu />
-      <PHeaderStyle>TrailBear </PHeaderStyle>
-      <PHeaderStyle>Изделия </PHeaderStyle>
-      <PHeaderStyle> ручной работы</PHeaderStyle>
-      <PHeaderStyle>из кожи</PHeaderStyle>
+      <PHeaderStyle>TrailBear <br/>Изделия <br/> ручной работы <br/> из кожи</PHeaderStyle>
     </HedersStyle>
   );
 }

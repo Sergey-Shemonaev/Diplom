@@ -45,17 +45,6 @@ const BoxStyle = styled.div`
   align-items: center;
   width: 50%;
 
-  /* animation: rotation infinite linear 2s;
-  transform: rotateY(0deg);
-  @keyframes rotation {
-    0% {
-      transform: rotateY(0deg);
-    }
-    100% {
-      transform: rotateY(-360deg);
-    }
-  } */
-
   @media (max-width: 990px) {
     width: 100%;
   }
@@ -144,10 +133,10 @@ function TextOfLogo() {
       </TextStyle>
       <BoxStyle>
         <WrapperStyle>
-            <ImgContainerStyle>
-              <ImgFrontStyle src={Logos1} alt="logotip1" />
-              <ImgBackStyle src={Logos2} alt="logotip2" />
-            </ImgContainerStyle>
+          <ImgContainerStyle>
+            <ImgFrontStyle src={Logos1} alt="logotip1" />
+            <ImgBackStyle src={Logos2} alt="logotip2" />
+          </ImgContainerStyle>
         </WrapperStyle>
       </BoxStyle>
     </TextOfLogoStyle>
